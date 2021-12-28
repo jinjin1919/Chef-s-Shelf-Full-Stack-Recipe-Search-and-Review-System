@@ -1,0 +1,474 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.recipeOfTheDay { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shelf { 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.easyAndFastRecipe {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+margin-top: 5em;
+}
+
+.healthyRecipe {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+}
+
+h1 { 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+h2 { 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+h2 span { 
+position:relative; 
+top: 10px; 
+color: white; 
+font: bold 24px/45px Helvetica, Sans-Serif; 
+letter-spacing: -1px;  
+background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.4);
+padding: 10px;
+margin: 1em 
+}
+
+h3 { 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+h3 span { 
+ color: white; 
+ font: bold 18px/20px Helvetica, Sans-Serif; 
+ letter-spacing: -1px;  
+ background: rgb(0, 0, 0); 
+ background: rgba(0, 0, 0, 0.4);
+ padding: 10px; 
+ tab-size: 40px;
+}
+
+h4 { 
+display: flex;
+justify-content: left;
+align-items: left;
+width: 100%;
+}
+
+.head-text {
+position: relative;
+}
+.text-on-image1 {
+position: absolute;
+left: 0px;
+right: 0px;
+bottom: -5%;
+}
+
+.text-on-image2 {
+position: absolute;
+left: 475px;
+right: 20px;
+bottom: 15%;
+}
+
+.section {
+  min-height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100 px 0;
+}
+.search {
+padding-bottom: 5%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.about {
+  position:relative; 
+  top: 10px; 
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black; 
+  font: 22px Verdana; 
+  letter-spacing: -1px;  
+  background: #ebebeb; 
+  padding: 10px; 
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.leftcolumn {   
+float: left;
+width: 35%;
+height: 450px; /* only for demonstration, should be removed */
+background: #ccc;
+padding: 20px;
+margin-left: 20px;
+}
+
+.rightcolumn {
+float: left;
+padding: 20px;
+width: 70%;
+background-color: #f1f1f1;
+height: 300px; 
+}
+
+
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+margin-top: 20px;
+}
+
+Subsitute {
+float:left;
+}
+
+Pie {
+float: right;
+}
+
+.searchDIV {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchText {
+
+  width: 50%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 60px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchText:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 80px;
+  height: 60px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+.about {
+    position:relative; 
+    top: 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    color: black; 
+    font: 22px Verdana; 
+    letter-spacing: -1px;  
+    background: #ebebeb; 
+    padding: 10px; 
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px;
+}
+
+.navbar1 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 1em;
+  gap: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+
+/* Style div elements that have class equal to tag */
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+/* Style div elements that have class equal to name */
+.nameInCard {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-top: 16px;
+  height: 3.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style p element */
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+/* Style button element */
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+
+  /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+  margin: 0 auto;
+  display: block;
+
+  /* Button is a clickable element, therefore it should have a pointer cursor */
+  cursor: pointer;
+}
+
+.card__details {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+}
+
+.card_details {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+}
+.card_readmore {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add style when button is focused or hovered */
+button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+.descriptionInCard {
+  line-height:1.2em;
+  height:3.6em;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+/* Add Map container and Map iframe style for brand page */
+.mapcontainer {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  padding-top: 66.66%; /* 3:2 Aspect Ratio */
+  height: 29%;
+  margin-right: auto;
+  color: #066;
+  margin-top: 3%
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 95.9%;
+  height: 95%;
+  border: none;
+}
+
+/* Add name container style for title on different pages */
+.name-container {
+  width:95%;
+  height: 2%;
+  background-color: #e7f5fe;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2%;
+  width: 90%;
+}
+
+/* Add brand Info container responsive style for brand page */
+.brand-info-columns {
+  float: left;
+  width: 20%;
+  padding: 8px;
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 30%;
+}
+
+.brand {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.brand:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.brand .brand-header {
+  color: black;
+  font-size: 25px;
+  background-color:#87cefa
+}
+
+.brand li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.brand .brand-name {
+  background-color: #dbf0fe;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #add8e6;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/* front image style for ingredient page*/
+.ingredient-image-container {
+  position: relative;
+  width: 68%;
+  overflow: hidden;
+  padding-top: 80%; /* 3:2 Aspect Ratio */
+  height: 10%;
+  margin-right: auto;
+  margin-left: 2%;
+  margin-top: 3%
+}
+
+
+/* subsitute information for ingredient page*/
+.subsitute-info-columns {
+  float: left;
+  width: 50%;
+  padding: 8px;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  height: 30%;
+}
+
+/* nutrition chart for ingredient page */
+.nutrition-chart-container {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  padding-top: 66.66%; /* 3:2 Aspect Ratio */
+  height: 30%;
+  margin-right: auto;
+  margin-left: 2%;
+  color: #066;
+  margin-top: 2%
+}
