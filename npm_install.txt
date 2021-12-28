@@ -1,0 +1,16 @@
+server side:
+npm install
+npm start
+
+client side:
+npm install
+
+npm install antd
+npm install @ant-design/charts --save
+
+npm i react-simple-star-rating
+npm install react-slideshow-image -S
+
+npm install axios
+
+npm i shards-react
